@@ -1,0 +1,282 @@
+/*Disclosure*/
+.disclosure-text {
+    font-size: 10px;
+    padding: 8px 0;
+}
+
+/*Bulleted List*/
+.bulleted-list {
+    list-style-type: disc !important;
+    padding-left: 3rem;
+}
+
+.bulleted-list li {
+    padding-left: 0;
+    text-indent: 0;
+    font-size: 14pt;
+}
+
+.bulleted-list li:before {
+    font-weight: bolder;
+    padding-right: 0;
+}
+
+/*Open Circle List*/
+.open-bulleted-list {
+    list-style-type: circle !important;
+    padding-left: 3em;
+}
+
+.open-bulleted-list li {
+    padding-left: 0;
+    text-indent: 0;
+    font-size: 14pt;
+}
+
+.open-bulleted-list li:before {
+    font-weight: bolder;
+    padding-left: 0;
+}
+
+/*Dash marked List*/
+.dash-mark-list {
+    list-style-type: '-' !important;
+    padding-left: 2rem;
+}
+
+.dash-mark-list li {
+    padding-left: 10px;
+    text-indent: 0;
+    font-size: 14pt;
+}
+
+.dash-mark-list li:before {
+    font-weight: bolder;
+    padding-right: 0;
+}
+
+/*Check marked List*/
+.checkmark-list {
+    list-style-type: none;
+    padding-left: 2rem;
+}
+
+.checkmark-list li {
+    padding-left: 0;
+    text-indent: -10px;
+    font-size: 14pt;
+}
+
+.checkmark-list li:before {
+    content: '\2713' !important;
+    font-weight: bolder;
+    padding-right: 10px;
+}
+
+/*X marked List*/
+.x-mark-list {
+    list-style-type: none;
+    padding-left: 2rem;
+}
+
+.x-mark-list li {
+    padding-left: 0;
+    text-indent: -10px;
+    font-size: 14pt;
+}
+
+.x-mark-list li:before {
+    content: '\0078' !important;
+    font-weight: bolder;
+    padding-right: 10px;
+}
+
+/*Numbered marked List*/
+.numbered-list {
+    padding-left: 3rem;
+}
+
+.numbered-list li {
+    padding-left: 0;
+    text-indent: 0;
+    font-size: 14pt;
+}
+
+.numbered-list li:before {
+    padding-right: 0;
+}
+
+/*Table*/
+.table-container, .table-header, .table-detail {
+    border: 1px solid #484848;
+    border-collapse: collapse;
+}
+.table-container {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.table-header {
+    background-color: rgba(0,0,0,.2);
+    font-weight: 600;
+    font-size: 18pt;
+}
+
+.table-detail {
+    font-size: 14pt;
+    font-weight: 400;
+}
+
+.table-header, .table-detail {
+    padding: 10px;
+}
+
+.table-row:hover, .table-row:nth-child(odd):hover {
+    background-color: rgba(9, 188, 190, .1);
+    color: #000000;
+}
+
+.table-row:nth-child(odd) {
+    background-color: rgba(0,0,0,.05);
+}
+
+/*H Tags*/
+.header-1, .header-1 a {
+    font-size: 36pt;
+    font-weight: 700;
+    color: #000000;
+    margin-top: .5rem;
+}
+
+.header-2, .header-2 a {
+    font-size: 28pt;
+    font-weight: 600;
+    color: #b26200;
+    margin-top: 1rem;
+}
+
+.header-3, .header-3 a {
+    font-size: 20pt;
+    font-weight: 600;
+    color: #484848;
+    margin-top: 1rem;
+}
+
+.header-4, .header-4 a {
+    font-size: 18pt;
+    font-weight: 600;
+    color: #000000;
+    margin-top: 1rem;
+}
+
+.content-paragraph {
+    font-size: 14pt;
+    font-weight: 400;
+    color: #000000;
+    line-height: 20pt;
+}
+
+/*Review Disclosure Section*/
+.review-details-two .disclosure-section {
+    border-bottom:  5px solid #062B55;
+}
+
+.disclosure-container {
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 767px) {
+    .table-container {
+        width: 100%;
+    }
+
+    .table-header, .table-detail {
+        word-wrap: break-word;
+        font-size: 11pt;
+    }
+
+    .table-header {
+        padding: 5px;
+        text-align: center;
+    }
+
+    .table-detail {
+        padding: 5px 8px;
+    }
+
+    .header-1, .header-1 a {
+        font-size: 22pt;
+    }
+
+    .header-2, .header-2 a {
+        font-size: 18pt;
+    }
+
+    .header-3, .header-3 a {
+        font-size: 16pt;
+    }
+
+    .header-4, .header-4 a {
+        font-size: 14pt;
+    }
+
+    .content-paragraph {
+        font-size: 12pt;
+        line-height: 16pt;
+    }
+
+    .bulleted-list li, .open-bulleted-list li, .checkmark-list li,.dash-mark-list li, .x-mark-list li {
+        font-size: 12pt;
+    }
+
+    /*Review Disclosure Section*/
+    .disclosure-container {
+        max-width: 540px;
+        padding: 0 1rem;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px){
+    .table-container {
+        table-layout: fixed;
+        width: 100%;
+    }
+    .table-header {
+        font-size: 14pt;
+    }
+    .table-detail {
+        font-size: 14pt;
+    }
+
+    .header-1 {
+        font-size: 28pt;
+    }
+
+    .header-2 {
+        font-size: 22pt;
+    }
+
+    .header-3 {
+        font-size: 20pt;
+    }
+
+    .header-4 {
+        font-size: 16pt;
+    }
+
+    .content-paragraph {
+        font-size: 14pt;
+        line-height: 16pt;
+    }
+    /*Review Disclosure Section*/
+    .disclosure-container {
+        max-width: 992px;
+        padding: 0 1rem;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .disclosure-container {
+        max-width: 1250px;
+    }
+}

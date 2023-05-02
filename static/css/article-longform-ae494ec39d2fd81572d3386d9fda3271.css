@@ -1,0 +1,37 @@
+.article-longform #Footer-section {
+    padding-bottom: 75px !important;
+}
+
+.article-content a, .article-intro a {
+    color: #09BCBE !important;
+    font-size: 18px !important;
+}
+
+.article-intro .details-list li {
+    text-decoration: underline !important;
+}
+
+.article-longform .details-list {
+    list-style-type: disc !important;
+    padding-left: 3rem !important;
+}
+
+.article-longform .details-list li {
+    padding-left: 0 !important;
+    text-indent: 0 !important;
+    font-size: 18px !important;
+}
+
+.article-longform .details-list li:before {
+    content: none !important;
+    font-weight: bolder !important;
+    padding-right: 0 !important;
+}
+
+@media only screen and (min-width: 768px) {
+    .article-longform .article-disclaimer {
+        font-size: 8px !important;
+    }
+
+}
+

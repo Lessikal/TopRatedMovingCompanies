@@ -1,0 +1,345 @@
+.carousel-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-wrapper {
+    position: relative;
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.11);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.carousel-wrapper.card-3{
+    -ms-flex: 0 0 30%;
+    flex: 0 0 30%;
+    max-width: 30%;
+}
+
+.carousel-wrapper.card-2{
+    -ms-flex: 0 0 40%;
+    flex: 0 0 40%;
+    max-width: 40%;
+}
+
+.carousel-products {
+    margin-top: -35px;
+}
+
+.carousel-content-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.carousel-wrapper.card-2 .carousel-content-box img, .carousel-wrapper.card-3 .carousel-content-box img {
+    margin-left: 0 !important;
+}
+
+.carousel-rating-pt {
+    font-family: MontBold, sans-serif !important;
+    font-size: 30px !important;
+    font-weight: 700 !important;
+    line-height: 2rem;
+}
+
+.carousel-arrow {
+    margin-left: 5px;
+}
+
+.carousel-rating-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 30%;
+    max-width: 30%;
+}
+
+.carousel-cta-btn {
+    color: #FFFFFF !important;
+    padding: 5px 10px;
+    border: 2px solid #e4405f !important;
+    border-radius: 5px;
+    background-color: #e4405f !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+}
+
+.carousel-cta-btn:hover {
+    color: #e4405f !important;
+    background-color: #FFFFFF !important;
+    border: 2px solid #e4405f !important;
+}
+
+.carousel-image {
+    width: 90%;
+    padding: 0;
+}
+
+.carousel-stars {
+    width: 100%;
+    padding-bottom: 5px;
+    padding-left: 0;
+    list-style-type: none;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.carousel-stars li {
+    display: inline-block;
+}
+
+.carousel-stars li>i {
+    color: #F3B42C;
+    letter-spacing: -3px;
+}
+
+/*ribbon*/
+.carousel-container .ribbon-container .ribbon {
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    padding: 5px 10px;
+    border-radius: 10px 0 0 0;
+}
+
+.carousel-container .ribbon-container .ribbon:before, .carousel-container .ribbon-container .ribbon:after {
+    display: none;
+}
+
+/*Article Longform Carousel*/
+.article-longform .carousel-row {
+    margin-top: 0 !important;
+}
+
+.article-longform .carousel-wrapper {
+    padding: 0;
+}
+
+.article-longform .carousel-content-box {
+    flex-direction: column !important;
+}
+
+.article-longform .carousel-rating-wrapper {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.article-longform .carousel-container .ribbon-container .ribbon.blue {
+    background: #19b8fd;
+    width: 100%;
+}
+
+.article-longform .carousel-container .ribbon-container .ribbon  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #e6d00a;
+    color: white;
+    text-align: center;
+    padding: 4px;
+    font-size: 12px !important;
+    border-radius: 5px 5px 0 0;
+}
+
+/* Mobile Version - For Samll Devices <=576 */
+@media only screen and (max-width: 576px) {
+    .carousel-rating-pt {
+        font-size: 14px !important;
+    }
+
+    .carousel-wrapper.card-2 .carousel-content-box img {
+        width: 90%;
+    }
+
+    .carousel-wrapper.card-3 .carousel-content-box img {
+        width: 80%;
+    }
+
+    .carousel-rating-pt {
+        font-size: 20px !important;
+        margin: 0 !important;
+    }
+
+    .carousel-cta-btn {
+        color: #e4405f;
+        padding: 3px 6px !important;
+        border: none !important;
+        background-color: transparent;
+        font-size: 10px !important;
+        font-weight: 800 !important;
+    }
+
+    .carousel-cta-btn:hover {
+        color: #e4405f;
+        text-decoration: #e4405f;
+        background-color: transparent !important;
+    }
+}
+
+/* For Devices <768 - Few elements share same functionality in Small and Medium Devices */
+@media only screen and (max-width: 767px) {
+    .carousel-wrapper {
+        border-radius: 5px;
+        padding: 15px 10px!important;
+    }
+
+    .carousel-row {
+        margin-top: -100px;
+        gap: 8px;
+    }
+
+    .carousel-wrapper {
+        padding: 10px !important;
+    }
+
+    .carousel-image-container {
+        width: 100% !important;
+        padding: 0 !important;
+        margin: 20px 0 5px 0 !important;
+        flex: 0 0 100% !important;
+    }
+
+    .carousel-wrapper.card-2 .carousel-content-box img, .carousel-wrapper.card-3 .carousel-content-box img {
+        width: 100%;
+    }
+
+    .carousel-products {
+        margin-top: -35px;
+    }
+
+    .article-longform .carousel-container {
+        margin: .5rem 0 !important;
+    }
+
+    .article-longform .carousel-container .ribbon-container .ribbon {
+        font-size: 10px !important;
+        line-height: 12px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .carousel-row {
+        margin-top: -85px;
+        gap: 1rem;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .carousel-wrapper.card-2 .carousel-content-box img, .carousel-wrapper.card-3 .carousel-content-box img {
+        width: 85%;
+    }
+    .carousel-image-container {
+        width: 100% !important;
+        padding: 0 !important;
+        margin: 20px 0 5px 0 !important;
+        flex: 0 0 100% !important;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .carousel-content-box {
+        flex-direction: column;
+    }
+
+    .carousel-image-container, .carousel-rating-wrapper {
+        flex: 0 0 100% !important;
+        max-width: 100%;
+    }
+
+    .carousel-stars li>i {
+        font-size: 14px;
+    }
+
+    .carousel-container .ribbon-container .ribbon {
+        width: 100%;
+        text-align: center;
+        padding: 4px;
+        font-size: 12px !important;
+        border-radius: 5px 5px 0 0;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .carousel-content-box {
+        flex-direction: row;
+    }
+    .carousel-wrapper.card-2 .carousel-content-box img {
+        width: 85%;
+    }
+
+    .carousel-wrapper.card-3 .carousel-content-box img {
+        width: 75%;
+    }
+
+    .article-longform .carousel-container .ribbon-container .ribbon {
+        width: 100%;
+        text-align: center;
+        padding: 4px;
+        font-size: 12px !important;
+        border-radius: 5px 5px 0 0;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .product-title {
+        font-size: 18px;
+    }
+    .carousel-image-container {
+        margin-top: 5px;
+        flex: 0 0 60% !important;
+        max-width: 60%;
+    }
+
+    .carousel-rating-wrapper {
+        flex: 0 0 40% !important;
+        max-width: 40% !important;
+    }
+
+    .article-longform .carousel-image-container, .article-longform .carousel-rating-wrapper {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .carousel-wrapper {
+        padding: 10px 15px !important;
+    }
+
+    .carousel-cta-btn {
+        padding: 10px 15px !important;
+        font-size: 12px !important;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+    .article-longform .carousel-content-box {
+        margin-top: 1rem;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+    .carousel-wrapper {
+        padding: 10px 15px !important;
+    }
+
+    .carousel-cta-btn {
+        padding: 5px 10px !important;
+        font-size: 12px !important;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .article-longform .carousel-content-box {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+}
+
+

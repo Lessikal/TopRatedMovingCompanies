@@ -1,0 +1,272 @@
+/*Vendor Logo Image*/
+.top-choices .card .product-image {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-40%, -40%);
+}
+
+/*CSS for Mattresses Landing layout*/
+.updated_site_layout .top-choices .card .product-image {
+    margin-top: -30px;
+}
+/*Vendor Logo Image end*/
+
+/*Stars*/
+ul.rating-list {
+    list-style-type: none;
+}
+
+ul.rating-list li {
+    display: inline-block;
+}
+
+ul.rating-list li > i {
+    color: #F3B42C;
+    letter-spacing: -3px;
+}
+/*Stars ends*/
+
+/*Rating containers*/
+.rating-wrapper {
+    font-size: 15px;
+    padding-left: 0rem !important;
+    margin-top: 1.2rem;
+}
+/*Rating containers end*/
+
+/*Rating Score*/
+.rating-pt {
+    font-size: 36px;
+    font-family: 'MontBold';
+    color: #000;
+    padding-left: 7px;
+}
+
+/*Rating Score end*/
+
+/*no of reviews from XX websites tagline*/
+.rating-line {
+    font-weight: 700;
+    font-size: 13px;
+    color: #72798A;
+}
+
+.review-details .product-start .rating-wrapper {
+    margin-top: 0;
+}
+
+.review-details .product-start .card-body {
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.review-details .top-choices .card .product-image {
+    width: 200px;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+}
+
+@media only screen and (max-width: 576px) {
+    .reviews-section .top-choices .card .product-image {
+        width: 155px;
+        position: relative;
+        top: 10%;
+        left: 40%;
+        transform: translate(-50%, -20%);
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+    .reviews-section .top-choices .card .product-image {
+        width: 155px;
+        position: relative;
+        top: 10%;
+        left: 45%;
+        transform: translate(-50%, -20%);
+    }
+}
+
+/* For Devices <768 - Few elements share same functionality in Small and Medium Devices */
+@media only screen and (max-width: 767px) {
+    /*vendor iamge*/
+    .top-choices .card .product-image {
+        width: 150px;
+        position: relative;
+        top: 0%;
+        left: 20%;
+        transform: translate(-50%, -25%);
+    }
+
+    /*stars*/
+    ul.rating-list {
+        top: 4.5rem;
+        position: absolute;
+        margin-top: 0 !important;
+        right: 1.5rem;
+        display: block;
+    }
+
+    ul.rating-list li > i {
+        font-size: 12px;
+        letter-spacing: -4px;
+    }
+
+    /*Rating Score*/
+    .rating-pt {
+        position: absolute;
+        top: 1rem !important;
+        right: 4rem !important;
+        padding-top: 15px;
+        display: block;
+        text-align: right;
+        font-size: 24px;
+    }
+
+    .reviews-section .product-title {
+        font-size: 18px !important;
+    }
+
+    .reviews-section .product-start > .card-body {
+        padding-top: 0.5rem;
+        padding-bottom: 0.25rem;
+        height: 80px;
+    }
+
+    .reviews-section .col-md-4.col-lg-3.product-pricing.text-center {
+        display: block
+    }
+
+    .reviews-section .btn-view-plan {
+        width: 100%;
+        font-size: 19px;
+        font-weight: 500;
+    }
+
+    /*Review Long Form*/
+    .review-details .product-start .rating-wrapper {
+        margin-bottom: 10px;
+    }
+
+    .review-details .product-start .card-body {
+        margin-left: 0;
+    }
+
+    .review-details .top-choices .card .product-image {
+        margin-left: 0 !important;
+        width: 160px;
+        top: 10%;
+        left: -10%;
+        transform: translate(0, 0);
+    }
+
+    .review-details .top-choices .card ul.rating-list {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+        text-align: center !important;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .product-start .card-body {
+        position: relative;
+        height: 100%;
+    }
+
+    #rating-nums {
+        grid-area: score;
+        align-self: end;
+    }
+
+    #rating-stars {
+        grid-areas: stars;
+    }
+
+    .rating-wrapper {
+        display: grid;
+        grid-column-gap: 15px;
+        grid-template-columns: 1fr .5fr;
+        justify-items: start;
+        align-items: center;
+        grid-template-areas:
+        "stars score";
+    }
+}
+
+/* For Devices >=768 - Tablet */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    /*vendor logo*/
+    .card-body .product-image {
+        width: 160px;
+    }
+
+    /*rating stars & score*/
+    .rating-wrapper {
+        margin-bottom: 0.25rem;
+        margin-top: 0;
+    }
+
+    .rating-pt {
+        font-size: 24px;
+        margin-left: 0;
+        padding: 0;
+    }
+
+    .rating-line {
+        font-weight: 500;
+        font-size: 10px;
+    }
+}
+
+/* Tablet_1024 */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    /*vendor logo*/
+    .card-body .product-image {
+        width: 160px;
+    }
+
+    /*vendor stars and score*/
+    .rating-wrapper {
+        padding-left: 0rem !important;
+    }
+
+    .rating-pt {
+        font-size: 24px;
+    }
+
+    .rating-line {
+        font-weight: 500;
+        font-size: 10px;
+    }
+}
+
+/*Devices Tablet_1024 and Desktop*/
+@media only screen and (min-width: 992px) {
+    .rating-wrapper {
+        margin-top: 0;
+        margin-bottom: 0.25rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    /*vendor logo*/
+    .card-body .product-image {
+        width: 180px;
+    }
+
+    /*rating stars and score*/
+    .rating-wrapper {
+        font-size: 18px;
+    }
+
+    #rating-popup {
+        transition: all 0.3s ease;
+    }
+}

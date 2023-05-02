@@ -1,0 +1,201 @@
+.sidebar-right .card {
+    box-shadow: 5.13px 3.63px 27px 0px rgba(192, 221, 238, .5);
+}
+
+.sidebar-section-title {
+    font-weight: 700;
+    font-size: 21px;
+    color: #062B55;
+}
+
+/*No of visits section*/
+.spoon-fork-icon {
+    width: 70px;
+    height: 70px;
+    margin-top: -25px;
+}
+
+.sidebar-list-title {
+    font-weight: 500;
+    font-size: 16px;
+    color: #062B55;
+}
+
+.sidebar-list-desc {
+    font-size: 14px;
+}
+
+.ana {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #09BCBE;
+}
+
+.editorial-name {
+    color: #062B55;
+    font-weight: 500;
+    font-size: 16px;
+    display: block;
+}
+
+.editorial-image.one {
+    margin-top: 9px;
+}
+
+/*links in Editorial section*/
+.lm-link {
+    color: #09BCBE;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+/*How we rank section*/
+.f-14 {
+    font-size: 14px !important;
+}
+
+/*Compare Section*/
+.icon-wrapper {
+    width: 63px;
+    height: 60px;
+}
+
+/**/
+.sidebar-vendor {
+    width: 100%;
+    height: 375px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.img-resize {
+    width: 100%;
+    height: auto;
+}
+
+/*No Image Sidebar Articles*/
+.article-side-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-left: 1rem;
+    width: 100%;
+}
+.article-side-list {
+    margin-bottom: 1rem;
+}
+
+.article-side-list p {
+    font-size: 12pt;
+    font-weight: 600;
+    font-style: italic;
+}
+
+@media only screen and (min-width: 768px) {
+    /*Debt Sidebar visitor count*/
+    .users-counter {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        column-gap: 5px;
+        margin-bottom: 0;
+    }
+    .users-counter p {
+        margin-bottom: 0;
+    }
+    .users-counter .visitor-count {
+        font-weight: 600;
+    }
+    .users-counter .visitor-msg {
+        font-weight: 400;
+    }
+    .users-counter img {
+        width: 50px;
+    }
+}
+
+/* Tablet_1024 */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .sidebar-section-title.one {
+        font-size: 16px;
+    }
+
+    .sidebar-section-title.two {
+        font-size: 21px;
+    }
+
+    .sidebar-section-title.same {
+        font-size: 18px;
+    }
+
+    .icon-wrapper {
+        width: 46px;
+        height: 44px;
+    }
+
+    .sidebar-list-title, .editorial-name {
+        font-size: 13px;
+    }
+
+    .icon-wrapper.two {
+        margin-top: -19px;
+    }
+
+    .sidebar-list-title.two {
+        font-size: 13px;
+        width: 110px;
+        display: inline-block;
+    }
+
+    .sidebar-list-desc {
+        font-size: 12px;
+    }
+
+    .ana {
+        font-size: 13px;
+    }
+
+    .editorial-name {
+        font-size: 13px;
+        margin-left: -4px;
+    }
+
+    .lm-link {
+        font-size: 12px;
+        margin-left: -4px;
+    }
+
+    .rank-img, .spoon-fork-icon {
+        display: none;
+    }
+
+    .sidebar-vendor {
+        width: 100%;
+        height: 275px;
+    }
+/*articles sidebar no image*/
+    .article-side-list p {
+        font-size: 11pt;
+        font-weight: 600;
+    }
+
+    .article-side-list .lm-link {
+        margin-left: 0;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    .sidebar-list-title.two {
+        width: 126px;
+        display: inline-block;
+    }
+
+    .icon-wrapper.two {
+        margin-top: -18px;
+    }
+}
